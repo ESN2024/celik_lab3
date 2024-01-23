@@ -22,7 +22,7 @@
 // Parameters
 //   NUM_RCVRS        : 4
 //   SENDER_IRW_WIDTH : 32
-//   IRQ_MAP          : 0:1,1:0,2:2,3:3
+//   IRQ_MAP          : 0:20,1:0,2:2,3:1
 //
 // -------------------------------------------------------
 
@@ -54,10 +54,10 @@ module celik_lab3_sys_irq_mapper
     always @* begin
 	sender_irq = 0;
 
-        sender_irq[1] = receiver0_irq;
+        sender_irq[20] = receiver0_irq;
         sender_irq[0] = receiver1_irq;
         sender_irq[2] = receiver2_irq;
-        sender_irq[3] = receiver3_irq;
+        sender_irq[1] = receiver3_irq;
     end
 
 endmodule

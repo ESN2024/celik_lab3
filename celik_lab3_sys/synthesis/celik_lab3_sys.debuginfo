@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="celik_lab3_sys" kind="system" version="18.1" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2024.01.23.21:36:53 -->
+ <!-- 2024.01.23.23:41:18 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1706042124</value>
+  <value>1706049485</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -9427,7 +9427,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="internalIrqMaskSystemInfo">
    <type>long</type>
-   <value>15</value>
+   <value>1048583</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -17072,7 +17072,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="IRQ_MAP">
    <type>java.lang.String</type>
-   <value>0:1,1:0,2:2,3:3</value>
+   <value>0:20,1:0,2:2,3:1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -21238,5 +21238,5 @@ parameters are a RESULT of the module parameters. -->
   <version>18.1</version>
  </plugin>
  <reportVersion>18.1 625</reportVersion>
- <uniqueIdentifier>4C445BACF9140000018D38090E3E</uniqueIdentifier>
+ <uniqueIdentifier>4C445BACF9140000018D38799328</uniqueIdentifier>
 </EnsembleReport>

@@ -61,7 +61,6 @@ set_location_assignment PIN_P11 -to CLK
 set_location_assignment PIN_B8 -to KEY
 set_location_assignment PIN_A15 -to RESET
 set_location_assignment PIN_AB15 -to SCL
-set_location_assignment PIN_AB16 -to CS_n
 set_location_assignment PIN_V11 -to SDA
 set_location_assignment PIN_C14 -to SEG1[0]
 set_location_assignment PIN_E15 -to SEG1[1]

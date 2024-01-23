@@ -7,10 +7,9 @@ entity celik_lab3 is
 		port (
 			CLK : in std_logic := '0';
 			RESET : in std_logic :='0';
-			SCL : inout std_logic := 'X';
-			SDA : inout std_logic := 'X';
-			CS_n : out std_logic := '1';
-			KEY : in std_logic := 'X';
+			SCL : inout std_logic := '0';
+			SDA : inout std_logic := '0';
+			KEY : in std_logic := '0';
 			SEG1 : out std_logic_vector(7 downto 0);
 			SEG2 : out std_logic_vector(7 downto 0);
 			SEG3 : out std_logic_vector(7 downto 0);
