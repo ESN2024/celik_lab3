@@ -1,0 +1,155 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 528 480)
+	(text "celik_lab3_sys" (rect 221 -1 280 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 464 20 476)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 224 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "key_external_connection_export" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "key_external_connection_export" (rect 4 101 184 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 197 82 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 224 208)(line_width 1))
+	)
+	(port
+		(pt 0 248)
+		(output)
+		(text "seg1_external_connection_export[3..0]" (rect 0 0 152 12)(font "Arial" (font_size 8)))
+		(text "seg1_external_connection_export[3..0]" (rect 4 237 226 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 224 248)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "seg2_external_connection_export[3..0]" (rect 0 0 153 12)(font "Arial" (font_size 8)))
+		(text "seg2_external_connection_export[3..0]" (rect 4 277 226 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 224 288)(line_width 3))
+	)
+	(port
+		(pt 0 328)
+		(output)
+		(text "seg3_external_connection_export[3..0]" (rect 0 0 153 12)(font "Arial" (font_size 8)))
+		(text "seg3_external_connection_export[3..0]" (rect 4 317 226 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 224 328)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(output)
+		(text "seg4_external_connection_export[3..0]" (rect 0 0 154 12)(font "Arial" (font_size 8)))
+		(text "seg4_external_connection_export[3..0]" (rect 4 357 226 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 224 368)(line_width 3))
+	)
+	(port
+		(pt 0 408)
+		(output)
+		(text "seg5_external_connection_export[3..0]" (rect 0 0 153 12)(font "Arial" (font_size 8)))
+		(text "seg5_external_connection_export[3..0]" (rect 4 397 226 408)(font "Arial" (font_size 8)))
+		(line (pt 0 408)(pt 224 408)(line_width 3))
+	)
+	(port
+		(pt 0 448)
+		(output)
+		(text "seg6_external_connection_export[3..0]" (rect 0 0 153 12)(font "Arial" (font_size 8)))
+		(text "seg6_external_connection_export[3..0]" (rect 4 437 226 448)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 224 448)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(bidir)
+		(text "opencores_i2c_0_export_0_scl_pad_io" (rect 0 0 158 12)(font "Arial" (font_size 8)))
+		(text "opencores_i2c_0_export_0_scl_pad_io" (rect 4 141 214 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 224 152)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(bidir)
+		(text "opencores_i2c_0_export_0_sda_pad_io" (rect 0 0 161 12)(font "Arial" (font_size 8)))
+		(text "opencores_i2c_0_export_0_sda_pad_io" (rect 4 157 214 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 224 168)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 209 43 436 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 229 67 476 144)(font "Arial" (color 0 0 0)))
+		(text "key_external_connection" (rect 82 83 302 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 107 494 224)(font "Arial" (color 0 0 0)))
+		(text "opencores_i2c_0_export_0" (rect 67 123 278 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "scl_pad_io" (rect 229 147 518 304)(font "Arial" (color 0 0 0)))
+		(text "sda_pad_io" (rect 229 163 518 336)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 195 179 420 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 229 203 500 416)(font "Arial" (color 0 0 0)))
+		(text "seg1_external_connection" (rect 76 219 296 451)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 243 494 496)(font "Arial" (color 0 0 0)))
+		(text "seg2_external_connection" (rect 74 259 292 531)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 283 494 576)(font "Arial" (color 0 0 0)))
+		(text "seg3_external_connection" (rect 74 299 292 611)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 323 494 656)(font "Arial" (color 0 0 0)))
+		(text "seg4_external_connection" (rect 74 339 292 691)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 363 494 736)(font "Arial" (color 0 0 0)))
+		(text "seg5_external_connection" (rect 74 379 292 771)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 403 494 816)(font "Arial" (color 0 0 0)))
+		(text "seg6_external_connection" (rect 74 419 292 851)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 229 443 494 896)(font "Arial" (color 0 0 0)))
+		(text " celik_lab3_sys " (rect 461 464 1018 938)(font "Arial" ))
+		(line (pt 224 32)(pt 304 32)(line_width 1))
+		(line (pt 304 32)(pt 304 464)(line_width 1))
+		(line (pt 224 464)(pt 304 464)(line_width 1))
+		(line (pt 224 32)(pt 224 464)(line_width 1))
+		(line (pt 225 52)(pt 225 76)(line_width 1))
+		(line (pt 226 52)(pt 226 76)(line_width 1))
+		(line (pt 225 92)(pt 225 116)(line_width 1))
+		(line (pt 226 92)(pt 226 116)(line_width 1))
+		(line (pt 225 132)(pt 225 172)(line_width 1))
+		(line (pt 226 132)(pt 226 172)(line_width 1))
+		(line (pt 225 188)(pt 225 212)(line_width 1))
+		(line (pt 226 188)(pt 226 212)(line_width 1))
+		(line (pt 225 228)(pt 225 252)(line_width 1))
+		(line (pt 226 228)(pt 226 252)(line_width 1))
+		(line (pt 225 268)(pt 225 292)(line_width 1))
+		(line (pt 226 268)(pt 226 292)(line_width 1))
+		(line (pt 225 308)(pt 225 332)(line_width 1))
+		(line (pt 226 308)(pt 226 332)(line_width 1))
+		(line (pt 225 348)(pt 225 372)(line_width 1))
+		(line (pt 226 348)(pt 226 372)(line_width 1))
+		(line (pt 225 388)(pt 225 412)(line_width 1))
+		(line (pt 226 388)(pt 226 412)(line_width 1))
+		(line (pt 225 428)(pt 225 452)(line_width 1))
+		(line (pt 226 428)(pt 226 452)(line_width 1))
+		(line (pt 0 0)(pt 528 0)(line_width 1))
+		(line (pt 528 0)(pt 528 480)(line_width 1))
+		(line (pt 0 480)(pt 528 480)(line_width 1))
+		(line (pt 0 0)(pt 0 480)(line_width 1))
+	)
+)
