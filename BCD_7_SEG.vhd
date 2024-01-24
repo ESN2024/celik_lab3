@@ -24,7 +24,7 @@ begin
 			"11111000" when e = "0111" else 
 			"10000000" when e = "1000" else 
 			"10010000" when e = "1001" else	
-			"10111111" when e = "1111" else
+			"10111111" when e = "1111" else 
 			"11111111";
 
 end architecture;

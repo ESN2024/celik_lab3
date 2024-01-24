@@ -10,6 +10,7 @@ entity celik_lab3 is
 			SCL : inout std_logic := '0';
 			SDA : inout std_logic := '0';
 			KEY : in std_logic := '0';
+			CS_n : out std_logic :='1'; 																								-- Chip select
 			SEG1 : out std_logic_vector(7 downto 0);
 			SEG2 : out std_logic_vector(7 downto 0);
 			SEG3 : out std_logic_vector(7 downto 0);
@@ -55,6 +56,9 @@ signal seg_6 : std_logic_vector(3 downto 0);
 
 
 begin
+
+		CS_n <= '1';
+		
 		u0 : component celik_lab3_sys
 					port map (
 						clk_clk                             => CLK,                             						-- clk.clk
