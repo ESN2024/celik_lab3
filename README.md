@@ -67,8 +67,7 @@ Tout est prêt, nous allons maintenant écrire notre code C qui fonctionne sur n
 
 - _Initialisation de l'I2C_ : Pour initialiser la communication avec l'I2C, j'ai utilisé les fichiers fournis par l'IP opencores_i2c. J'ai d'abord appelé la fonction I2C_init() puis utilisé I2C_start() sur le registre 0x1D pour vérifier sa fonctionnalité. Ensuite, j'ai mis en œuvre les fonctions read_I2C() et write_I2C() en exploitant les fichiers IP fournis pour les opérations de lecture et d'écriture.
 
-- Affichage UART : Pour afficher les données sur l'UART, j'ai lu les registres X0(0x32), X1(0x33), Y0(0x34), Y1(0x35), Z0(0x36) et Z1(0x37). Ensuite, j'ai effectué une opération de décalage et un OU logique entre le bit de poids faible (LSB) et le bit de poids fort (MSB) pour obtenir les mesures finales. Enfin, j'ai affiché les valeurs obtenues sur l'UART.
-
+- _Affichage UART_ : Pour afficher les données sur l'UART, j'ai lu les registres X0(0x32), X1(0x33), Y0(0x34), Y1(0x35), Z0(0x36) et Z1(0x37). Ensuite, j'ai effectué une opération de décalage et un OU logique entre le bit de poids faible (LSB) et le bit de poids fort (MSB) pour obtenir les mesures finales. Enfin, j'ai affiché les valeurs obtenues sur l'UART.
 
 https://github.com/ESN2024/celik_lab3/assets/117944504/393414a9-5c2d-4c1b-a27a-0095e7e2aaa8
 
@@ -76,7 +75,7 @@ https://github.com/ESN2024/celik_lab3/assets/117944504/393414a9-5c2d-4c1b-a27a-0
 
 https://github.com/ESN2024/celik_lab3/assets/117944504/3bdc924c-54f4-4694-96dd-1bfd0798d11a
 
-<h3> Seulement Z </h3>h3>
+<h3> Seulement Z </h3>
 
 Pour l'affichage à 7 segments, j'ai utilisé le code VHDL "BCD_TO_SEG" et les fonctions de lab 2. Cependant, j'ai modifié le code du logiciel pour gérer l'affichage sur les six écrans à 7 segments et pour tenir compte des valeurs négatives. Au départ, je me suis concentré sur l'affichage uniquement de l'axe Z.
 
