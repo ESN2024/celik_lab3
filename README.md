@@ -61,7 +61,7 @@ Tout est prêt, nous allons maintenant écrire notre code C qui fonctionne sur n
 
 <h3> Language C </h3>
 
-![image](https://github.com/ESN2024/celik_lab3/assets/117944504/6460e352-2ac1-4f6a-98da-5a2750ce447e)
+![image](https://github.com/ESN2024/celik_lab3/assets/117944504/a16345f1-d743-4570-aa85-e663c9e4806c)
 
 <h3> Résultats </h3>
 
@@ -69,12 +69,26 @@ Tout est prêt, nous allons maintenant écrire notre code C qui fonctionne sur n
 
 - Affichage UART : Pour afficher les données sur l'UART, j'ai lu les registres X0(0x32), X1(0x33), Y0(0x34), Y1(0x35), Z0(0x36) et Z1(0x37). Ensuite, j'ai effectué une opération de décalage et un OU logique entre le bit de poids faible (LSB) et le bit de poids fort (MSB) pour obtenir les mesures finales. Enfin, j'ai affiché les valeurs obtenues sur l'UART.
 
-![Uploading image.png…]()
+
+https://github.com/ESN2024/celik_lab3/assets/117944504/393414a9-5c2d-4c1b-a27a-0095e7e2aaa8
 
 - _Calibration_ : Pour calibrer l'accéléromètre, j'ai initialement réglé les registres OFSX(0x1E), OFSY(0x1F) et OFSZ(0x20) à 0, éliminant ainsi toute valeur de décalage. Ensuite, j'ai lu les mesures sur l'UART. Par exemple, pour Z, j'ai obtenu la valeur 7c0 (en base 10 : 1984, multipliée par 3.9 : 7737 m/s²). La valeur souhaitée pour Z, lorsque la carte est plate, est de 9800 m/s². Par conséquent, j'ai ajouté progressivement un décalage au registre OFSZ pour obtenir le résultat souhaité. J'ai suivi le même processus pour X et Y afin d'obtenir 0 m/s² pour les deux registres.
 
+https://github.com/ESN2024/celik_lab3/assets/117944504/3bdc924c-54f4-4694-96dd-1bfd0798d11a
 
+<h3> Seulement Z </h3>h3>
+
+Pour l'affichage à 7 segments, j'ai utilisé le code VHDL "BCD_TO_SEG" et les fonctions de lab 2. Cependant, j'ai modifié le code du logiciel pour gérer l'affichage sur les six écrans à 7 segments et pour tenir compte des valeurs négatives. Au départ, je me suis concentré sur l'affichage uniquement de l'axe Z.
+
+https://github.com/ESN2024/celik_lab3/assets/117944504/d50c0df8-0ec2-4dc1-8514-3aabdd60c9aa
+
+<h3> Utilisation du timer </h3>
+
+Pour mettre à jour l'affichage sur les afficheurs 7 segments toutes les secondes, j'ai appliqué la même configuration que dans le lab 2. Voici donc la version finale.
+
+https://github.com/ESN2024/celik_lab3/assets/117944504/37979112-3fb1-44f5-84b3-9bae95f43c29
 
 <h3> Conclusion </h3>
 
+J'ai réussi à mettre en œuvre avec succès les fonctionnalités requises pour le lab 3. Bien que cette tâche ait semblé plus complexe en termes de difficulté, une fois que j'ai acquis une compréhension de la communication avec l'accéléromètre ADXL, les étapes restantes se sont avérées similaires aux travaux pratiques antérieurs. La seule difficulté rencontrée a résidé dans le processus de calibrage. Malgré ma conviction d'avoir suivi la méthode appropriée, les valeurs obtenues sur les différents axes ne correspondaient pas aux attentes. Par exemple, en plaçant l'appareil à plat sur la table, j'anticipais des valeurs de x=0, y=0 et z=-9 700 m/s². Cependant, bien que les valeurs de x et y fussent nulles, la mesure de Z était de -7 300 m/s². Je demeure incertain quant à savoir si cette disparité résulte de mon processus de calibrage ou de l'accéléromètre lui-même.
 
